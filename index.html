@@ -83,7 +83,7 @@
             <img src="img/main-article.png" class="main-img" alt="main article img">
           
             <div class="article-info">
-            <h2 class="article-main-title">Malaysia scraps mandatory death penalty, natural-life prison terms<br><span style="font-size: 16px; font-weight:300; color: gray;">10:06 PM EDT, Mon April 3, 2023</span></h2>
+            <h2 class="article-main-title">Malaysia scraps mandatory death penalty, natural-life prison terms<br><span style="font-size: 16px; line-height: 1; font-weight:300; color: gray;">10:06 PM EDT, Mon April 3, 2023</span></h2>
             <div class="article-read">
               <p class="article-content">
                 Malaysia’s parliament on Monday passed sweeping legal reforms to remove the mandatory death penalty, trim the number of offenses punishable by death, and abolish natural-life prison sentences, a move cautiously welcomed by rights groups.
@@ -226,20 +226,21 @@
         </section>
         
         <section id="contact">
-          <div class="contact-container">
-            <div class="contact-box">
-              <div class="left"></div>
-              <div class="right">
-                <h2>Connect with Us</h2>
-                <input type="text" class="field" placeholder="Your Name">
-                <input type="text" class="field" placeholder="Your Email">
-                <input type="text" class="field" placeholder="Country">
-                <input type="text" class="field" placeholder="Key Issues">
-                <textarea placeholder="Message" class="field"></textarea>
-                <button>Submit</button>
+                <div class="contact-box">
+                  <h2>Connect with Us</h2>
+                  <form>
+                    <input type="text" id="name" class="field" placeholder="Your Name">
+                    <input id="city" type="text" class="field" placeholder="City">
+                    <input id="email" type="email" class="field" placeholder="Your Email">
+                    <input id="zip-code" type="number" class="field" placeholder="Zip-code">
+                    <input type="text" class="field" placeholder="Key Issues">
+                    <textarea placeholder="Message" class="field"></textarea>
+                    <input id="status" type="checkbox">
+                    <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+                    <button id="submit-form" type="submit">Submit</button>
+                    <div id="warning"></div>
+                     </form>
               </div>
-            </div>
-          </div>
         </section>
 
         <footer>

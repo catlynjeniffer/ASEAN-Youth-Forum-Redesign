@@ -238,7 +238,6 @@ h4 {
     grid-row: 1 span;
     margin-left: 72px;
 }
-
 .main-img {
     width: 100%;
     margin-top: 40px;
@@ -250,18 +249,17 @@ h4 {
 }
 
 .article-main-title{
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 600;
     color: black;
-    width: 300px;
     margin-top: 20px;
+    margin-right: 16px;
 }
 
 .article-content {
     color: black;
     font-size: 21px;
     font-weight: 500;
-    width: 480px;
     line-height: 1.5;
     margin-top: none;
 }
@@ -281,11 +279,6 @@ h4 {
     padding-right: 0px;
 }
 
-.new{
-    grid-column: 1 span;
-    grid-row: 1 span;
-}
-
 .new-container{
     padding: 1rem;
     margin-left: 20px;
@@ -293,12 +286,14 @@ h4 {
     flex-direction: column;
     margin-right: 72px;
 }
+
 .header{
     font-size: 36px;
     font-weight: 600;
     color: black;
     margin-top: 20px;
 }
+
 .new-articles{
     display: flex;
     flex-direction: column;
@@ -464,61 +459,50 @@ h4 {
     float: right;
 }
 
-.contact-container{
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 60px;
+#contact {
+    width: 100%;
+    min-height: 720px;
+    background: url(img/contact.jpeg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
 }
 
-.contact-box{
-	max-width: 1440px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+.contact-box {
+    background-color: white;
+    border-radius: 12px;
+    width: 70%;
+    padding: 24px;
+    height: 620px;
 }
 
-.left{
-	background: url('img/contact.jpeg') no-repeat center;
-	background-size: cover;
-    filter: brightness(50%);
-	height: 100%;
-}
-
-.right{
-	padding-bottom: 40px; padding-top: 40px;
-    padding-left: 40px; padding-right: 72px;
-    background-color: #1e3932;
-}
-
-.right h2{
+.contact-box h2{
     padding-bottom: 32px;
-    color: white;
+    text-align: center;
 }
 
-.field{
-	width: 100%;
+.field {
+	width: 90%;
 	border: 1px solid gray;
     border-radius: 4px;
 	outline: none;
 	background-color: white;
-	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
-	margin-bottom: 22px;
-	transition: .3s;
+	padding: 10px;
+	font-size: 16px;
+	margin-bottom: 24px;
+    margin-left: 40px; margin-right: 40px;
 }
 
 textarea{
-	min-height: 150px;
+	min-height: 80px;
 }
 
-.right button {
+.contact-box button {
     float: right;
-    margin-top: 32px;
+    margin-top: 4px;
+    margin-right: 60px;
 }
 
 footer {
@@ -630,6 +614,9 @@ footer a {
     }
     .search {
         display: block;
+    }
+    .new-articles:nth-child(6){
+        display: none;
     }
 }
 
